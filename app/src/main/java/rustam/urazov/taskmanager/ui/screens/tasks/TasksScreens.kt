@@ -1,4 +1,4 @@
-package rustam.urazov.taskmanager.ui.screens
+package rustam.urazov.taskmanager.ui.screens.tasks
 
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text

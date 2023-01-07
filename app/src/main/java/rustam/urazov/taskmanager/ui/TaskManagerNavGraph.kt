@@ -4,7 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import rustam.urazov.taskmanager.ui.screens.TasksScreen
+import rustam.urazov.taskmanager.ui.screens.tasks.TasksScreen
 
 @Composable
 fun TaskManagerNavGraph() {

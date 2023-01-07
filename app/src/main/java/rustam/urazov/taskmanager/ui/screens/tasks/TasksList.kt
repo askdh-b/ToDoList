@@ -1,4 +1,4 @@
-package rustam.urazov.taskmanager.ui.screens
+package rustam.urazov.taskmanager.ui.screens.tasks
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -27,7 +27,9 @@ fun TasksList(tasks: List<TaskView>) {
         contentPadding = NoneMediumPaddings
     ) {
         items(tasks) { task ->
-            Task(task = task, modifier = Modifier.padding(LargeMediumPaddings))
+            Task(
+                task = task, modifier = Modifier.padding(LargeMediumPaddings)
+            )
         }
     }
 }
