@@ -20,18 +20,18 @@ import rustam.urazov.taskmanager.R
 import rustam.urazov.taskmanager.ui.theme.*
 
 @Composable
-fun Task(task: TaskView) {
+fun Task(task: TaskView, modifier: Modifier = Modifier) {
     var descriptionEnabled by remember { mutableStateOf(false) }
 
-    BoxWithConstraints(modifier = Modifier
+    BoxWithConstraints(modifier = modifier
         .fillMaxWidth()
         .clip(Shapes.large)
         .clickable { descriptionEnabled = !descriptionEnabled }
         .background(White)
-        .padding(LargePaddings)
+        .padding(LargeLargePaddings)
     ) {
         Column(modifier = Modifier.width(maxWidth - 40.dp)) {
-            Text(text = task.name, color = Black, style = Typography.h1)
+            Text(text = task.title, color = Black, style = Typography.h1)
 
             if (descriptionEnabled) Text(
                 text = task.description, color = Black, style = Typography.body1
@@ -58,7 +58,7 @@ fun Task(task: TaskView) {
 
 @Preview
 @Composable
-fun Preview() {
+fun TaskPreview() {
     TaskManagerTheme {
         Surface(modifier = Modifier.fillMaxSize(), color = Color(0xFFEEDDEE)) {
             Column {
