@@ -22,10 +22,10 @@ import rustam.urazov.taskmanager.ui.theme.White
 
 @Composable
 fun ActionIcon(
-    boxSize: Dp,
-    offset: Dp,
     actionState: ActionState,
-    icon: Painter
+    icon: Painter,
+    boxSize: Dp,
+    offset: Dp
 ) {
     Box(
         modifier = Modifier
